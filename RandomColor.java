@@ -1,8 +1,8 @@
-package interfete;
+package bau;
 
 import java.awt.*;
 import java.awt.event.*;
-public class RandomColor implements ActionListener
+public class Color implements ActionListener
 {
 private Container container;
 public RandomColor(Container c)
