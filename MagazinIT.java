@@ -1,13 +1,10 @@
 package magazinit;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class MagazinIT {
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args)  {
         try{
             Connection con = DBUtil.getConnection(DBType.MYSQLDB);
             
@@ -22,7 +19,7 @@ public class MagazinIT {
         }
         catch (SQLException e)
         {
-            e.printStackTrace();
+            System.out.println("Conecxtiunea a esuat");
         }
     }
 }
