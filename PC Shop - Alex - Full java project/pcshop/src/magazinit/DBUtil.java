@@ -1,6 +1,6 @@
 package magazinit;
 
-
+import magazinit.DBType;
 import java.sql.*;
 
 
