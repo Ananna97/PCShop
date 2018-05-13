@@ -145,9 +145,5 @@ public class FrameAdaugare extends JFrame{
             JOptionPane.showMessageDialog(null, ex.toString(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-     /* public static void main(String[] args) {
-        FrameAdaugare f = new FrameAdaugare();
-        f.setVisible(true);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }*/
+     
 }

@@ -13,6 +13,7 @@ public class FrameMeniu extends JFrame{
 
      private final JButton adauga = new JButton("Adauga");
      private final JButton exit = new JButton("Iesire");
+     private final JButton sterge = new JButton("Sterge");
     
     public FrameMeniu() {
         setTitle("MAGAZIN IT");
@@ -36,10 +37,11 @@ public class FrameMeniu extends JFrame{
     private void InitComponente(){
        adauga.setBounds(300,30,200,50);
        exit.setBounds(700,400,80,25);
-       
+       sterge.setBounds(300,90,200,50);
        
        add(adauga);
        add(exit);
+       add(sterge);
 
 }
     
@@ -55,6 +57,13 @@ public class FrameMeniu extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                FrameAdaugare f2 = new FrameAdaugare();
+               
+            }
+        });
+        sterge.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               FrameDelete fd1 = new FrameDelete();
                
             }
         });
